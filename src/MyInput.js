@@ -11,6 +11,7 @@ class MyInput extends Component {
   }
 
   render() {
+    throw new Error("MyInput: error thrown");
     return (
       <div>
         <input

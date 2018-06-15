@@ -8,7 +8,7 @@ class Contact extends Component {
     this.state = {
       isExpanded: false
     };
-    this.handleClick = this.handleClick.bind(this);
+    // this.handleClick = this.handleClick.bind(this);
   }
 
   render() {
@@ -29,10 +29,11 @@ class Contact extends Component {
     );
   }
 
-  handleClick() {
+  handleClick = event => {
+    console.log("handleClick");
     this.setState(prevState => ({ isExpanded: !prevState.isExpanded }));
     // this.setState({ isExpanded: !this.state.isExpanded });
-  }
+  };
 }
 
 Contact.propTypes = {

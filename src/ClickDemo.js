@@ -7,6 +7,7 @@ class ClickDemo extends Component {
   }
 
   render() {
+    throw new Error("ClickDemo: something happened");
     return <h3 onClick={this.handleClick}>Click Me - A React event handler</h3>;
   }
 
